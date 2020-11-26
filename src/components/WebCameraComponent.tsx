@@ -20,7 +20,7 @@ const WebCameraComponent: React.FC<{
     const [recordedChunks, setRecordedChunks] = useState<Blob[]>([]);
     const [recorder, setRecorder] = useState<MediaRecorder | null>(null);
     const [webSocket, setWebSocket] = useState<WebSocket>(
-        new WebSocket("ws://localhost:8765")
+        new WebSocket("ws://192.168.10.136:8765")
     );
 
     const [streamState, setStreamState] = useState<MediaStream | null>(null);
@@ -71,7 +71,7 @@ const WebCameraComponent: React.FC<{
 
             setInterval(() => {
                 webSocket!.send(getCanvasData());
-            }, 3000);
+            }, 5000);
         }
     }, [start]);
 

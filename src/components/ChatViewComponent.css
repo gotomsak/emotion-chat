@@ -6,14 +6,22 @@
     position: relative; /*←相対位置*/
     padding-bottom: 120px; /*←footerの高さ*/
     box-sizing: border-box; /*←全て含めてmin-height:100vhに*/
-    background-color: lawngreen;
+    background-color: #7cfc00;
+    
+    border: medium solid ;
+    border-radius: 10px;
 }
 
 .message-view {
     width: 100%;
+    border-color: black;
 }
 .input-message {
+    border: medium solid ;
+    border-radius: 10px;
+    border-color: none;
     width: 100%;
     position: absolute; /*←絶対位置*/
     bottom: 0; /*下に固定*/
 }
+
